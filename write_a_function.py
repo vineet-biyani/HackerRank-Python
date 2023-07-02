@@ -1,5 +1,5 @@
-def is_leap(year):
-    if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+def is_leap(is_year_leap):
+    if is_year_leap % 400 == 0 or (is_year_leap % 4 == 0 and is_year_leap % 100 != 0):
         return True
     return False
 
