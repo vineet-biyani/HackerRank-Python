@@ -5,8 +5,10 @@ def wrap(string_to_wrap, max_width):
 
 string = input("")
 width = int(input(""))
-result = wrap(string, width)
-print(result)
+
+if (0 < len(string) < 1000) and (0 < width < len(string)):
+    result = wrap(string, width)
+    print(result)
 
 
 # ALTERNATE METHOD 1
@@ -19,8 +21,9 @@ def wrap(wrapping_string, wrapping_width):
 
 string = input("")
 width = int(input(""))
-result = wrap(string, width)
-print(result)
+if (0 < len(string) < 1000) and (0 < width < len(string)):
+    result = wrap(string, width)
+    print(result)
 
 
 # ALTERNATE METHOD 2
@@ -32,5 +35,6 @@ def wrap(string_for_wrapping, wrap_width):
 
 
 string, width = input(), int(input())
-result = wrap(string, width)
-print(result)
+if (0 < len(string) < 1000) and (0 < width < len(string)):
+    result = wrap(string, width)
+    print(result)
